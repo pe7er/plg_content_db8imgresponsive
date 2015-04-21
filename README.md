@@ -9,3 +9,5 @@ Joomla 3.x plugin to add a responsive class to images
  
  Note that this is just a workaround and that it is better to optimize your images to the right size.
  
+ 
+ To Do: implement category filter.
