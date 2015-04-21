@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="content" method="upgrade">
+	<name>PLG_CONTENT_DB8IMGRESPONSIVE</name>
+	<author>Peter Martin</author>
+    <creationDate>April 2015</creationDate>
+    <copyright>Copyright (C) 2015 by Peter Martin. All rights reserved.</copyright>
+    <license>GNU General Public License version 2</license>
+    <authorEmail>joomla@db8.nl</authorEmail>
+    <authorUrl>www.db8.nl</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_CONTENT_DB8IMGRESPONSIVE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="db8imgresponsive">db8imgresponsive.php</filename>
+        <filename>db8imgresponsive.xml</filename>
+        <folder>assets</folder>
+        <folder>language</folder>
+	</files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                        name="catid"
+                        type="category"
+                        extension="com_content"
+                        multiple="true"
+                        default=""
+                        size="10"
+                        label="JCATEGORY"
+                        description="PLG_CONTENT_DB8IMGRESPONSIVE_FIELD_CATEGORY_DESC"/>
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" priority="1" name="plg_content_db8imgresponsive">http://www.db8.nl/updates/plg_content_db8imgresponsive.xml</server>
+    </updateservers>
+</extension>
